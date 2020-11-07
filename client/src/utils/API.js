@@ -8,7 +8,7 @@ export const getMe = (token) => {
   });
 };
 
-export const ADD_USER = (userData) => {
+export const createUser = (userData) => {
   return fetch('/api/users', {
     method: 'POST',
     headers: {
@@ -18,7 +18,7 @@ export const ADD_USER = (userData) => {
   });
 };
 
-export const LOGIN_USER = (userData) => {
+export const loginUser = (userData) => {
   return fetch('/api/users/login', {
     method: 'POST',
     headers: {
